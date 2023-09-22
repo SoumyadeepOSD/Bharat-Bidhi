@@ -1,12 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { Box, Flex,Text } from "@chakra-ui/react";
+import {AiOutlineMenu} from 'react-icons/ai';
+
+
+const ashokStambth = "https://th.bing.com/th/id/OIP.x2cxmNsFezpRwMqlhJ1JwgHaIT?pid=ImgDet&rs=1";
+const g20Summit = "https://cdn.mos.cms.futurecdn.net/LSNfJe7vmuHnXeSqSefycK-1200-80.jpg";
+const azzadikaamrit = "https://zeevector.com/wp-content/uploads/Azadi-Ka-Amrit-Mahotsav-Logo-in-Hindi_Download-387x258.png"
 
 const Hero = ()=>{
-    const ashokStambth = "https://th.bing.com/th/id/OIP.x2cxmNsFezpRwMqlhJ1JwgHaIT?pid=ImgDet&rs=1";
-    const g20Summit = "https://cdn.mos.cms.futurecdn.net/LSNfJe7vmuHnXeSqSefycK-1200-80.jpg";
-    const azzadikaamrit = "https://zeevector.com/wp-content/uploads/Azadi-Ka-Amrit-Mahotsav-Logo-in-Hindi_Download-387x258.png";
+   ;
     return(
-        <Box background={'white'} marginInline={'7'} marginBlock={'5'}>
+        <Flex flexDirection={'column'} justifyContent={'space-between'}>
+        {/* First section */}
+        <Box background={'white'} marginInline={'7'} marginBlock={'2'}>
             <Flex flexDirection={'row'} alignItems={'center'} gap={'20px'} justifyContent={'space-between'}>
                 
                 {/* Left */}
@@ -27,8 +33,31 @@ const Hero = ()=>{
 
             </Flex>
         </Box>
+        {/* Second Section */}
+        <Box background={'blue.600'} paddingBlock={'5'}>
+            <Flex flexDirection={'row'} justifyContent={'space-between'} marginInline={'20'}>
+            <Flex flexDirection={'row'} alignItems={'center'} gap={'3rem'}>
+                <Text color={'white'} fontWeight={'bold'}>Home</Text>
+                <Text color={'white'} fontWeight={'bold'}>About Us</Text>
+                <Text color={'white'} fontWeight={'bold'}>Our Mission</Text>
+                <Text color={'white'} fontWeight={'bold'}>eMarket Place</Text>
+                <Text color={'white'} fontWeight={'bold'}>Dashboard</Text>
+            </Flex>
+            <AiOutlineMenu size={'1.5rem'} color="white"/>
+            </Flex>
+        </Box>
+        </Flex>
     );
 }
 
+
+
+  
+
+
+
 export default Hero;
+
+
+
 
